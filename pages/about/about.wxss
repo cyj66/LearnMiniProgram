@@ -1,0 +1,4 @@
+/* about/about.wxss */
+text{
+    color:red
+}
