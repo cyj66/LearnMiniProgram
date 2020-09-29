@@ -1,3 +1,2 @@
-<!--about/about.wxml-->
-<text>hello-world</text>
-<button size="mini">按钮</button>
+<!--pages/about/about.wxml-->
+<text>pages/about/about.wxml</text>
