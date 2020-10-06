@@ -1,0 +1,5 @@
+/* components/my-cpn.wxss */
+.mycpn{
+    color:pink;
+    font-size: 50rpx;
+}

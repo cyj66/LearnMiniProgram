@@ -1,4 +1,13 @@
 /* about/about.wxss */
-text{
+.tex{
     color:red
+}
+.red{
+    color:red
+}
+.green{
+    color:green;
+}
+.blue{
+    color:blue
 }

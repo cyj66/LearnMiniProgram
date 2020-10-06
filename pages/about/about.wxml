@@ -1,3 +1,22 @@
 <!--about/about.wxml-->
-<text>hello-world</text>
+<text class="tex">hello-world</text>
 <button size="mini">按钮</button>
+<my-cpn></my-cpn>
+<my-cpn></my-cpn>
+<my-cpn></my-cpn>
+
+<!-- 1、自定义组件传递数据/样式 -->
+<my-prop title="hhh" titleclass="red"></my-prop>
+<my-prop title="xxx" titleclass="green"></my-prop>
+<my-prop titleclass="blue"></my-prop>
+
+<!-- 2、组件内部发出事件 -->
+<view>当前计数：{{counter}}</view>
+<my-event bind:incre="increment"></my-event>
+
+<tab title="{{['鞋子','裤子','袜子']}}"
+     bind:itemtap="taptaptap"></tab>
+
+<!-- 3、直接选中组件修改数据/调用方法 -->
+<button bindtap="incrementcpn">修改组件内的数据</button>
+<my-sel class="sel-class" id="sel-id"></my-sel>

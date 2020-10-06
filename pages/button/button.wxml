@@ -1,0 +1,20 @@
+<!--pages/button/button.wxml-->
+<text>pages/button/button.wxml</text>
+<!-- 1.size属性 -->
+<button size="mini">按钮</button>
+<!-- 2.type属性 -->
+<button type="default">按钮</button>
+<button type="warn">按钮</button>
+<button type="primary">按钮</button>
+<!-- 3.plain镂空属性 -->
+<button plain>按钮</button>
+<!-- 4.loading -->
+<button loading>按钮</button>
+<!-- 5.hover-class -->
+<button hover-class="press">按钮</button>
+
+<text wx:for="{{[3,6,9]}}">666\n</text>
+
+
+
+

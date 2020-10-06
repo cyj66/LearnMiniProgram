@@ -1,0 +1,21 @@
+<!--pages/text/text.wxml-->
+<text>pages/text/text.wxml\n</text> 
+<text>换行可以在后面加"\\n"\n</text>
+
+<!-- 1.默认文字无法选中,selectable-->
+<text selectable="{{true}}">我能被选中\n</text>
+
+<!-- 2.space决定文本空格大小 -->
+<text>hello world\n</text>
+<!-- 默认一个英文字符大小 -->
+<text space="nbsp">hello world\n</text>
+<!-- 半个中文字符大小 -->
+<text space="ensp">hello world\n</text>
+<!-- 一个中文字符大小 -->
+<text space="emsp">hello world\n</text>
+
+<!-- 3.decode解码 -->
+<text>5 &gt; 3\n</text>
+<text decode>5 &gt; 3\n</text>
+<text decode="{{true}}">5 &gt; 3\n</text>
+

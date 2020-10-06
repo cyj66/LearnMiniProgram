@@ -1,0 +1,3 @@
+<!--components/my-cpn.wxml-->
+<text class="mycpn">my-cpn.wxml</text>
+<cpn1></cpn1> 

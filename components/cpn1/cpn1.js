@@ -1,30 +1,13 @@
-// about/about.js
+// components/cpn1/cpn1.js
 Page({
 
     /**
      * 页面的初始数据
      */
     data: {
-        counter:0
+
     },
-    increment(event){    //组件内的函数需要写在methods里面,pages的不用
-        this.setData({
-            counter:++this.data.counter    //记得要写data
-        })
-        console.log(event)
-    },
-    taptaptap(event){
-        console.log(event)
-    },
-    
-    incrementcpn(){
-        const my_sel=this.selectComponent('.sel-class');
-        //直接修改组件中的data不太合理
-        // my_sel.setData({
-        //     counter:my_sel.data.counter+20
-        // })
-        my_sel.incre(10)
-    },
+
     /**
      * 生命周期函数--监听页面加载
      */
