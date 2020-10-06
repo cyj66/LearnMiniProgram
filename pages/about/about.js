@@ -1,4 +1,5 @@
 // about/about.js
+import request from '../../service/network.js'   //不能用绝对路径
 Page({
 
     /**
@@ -12,7 +13,40 @@ Page({
      * 生命周期函数--监听页面加载
      */
     onLoad: function (options) {
-
+        //1、发送携带参数的get请求
+        // wx.request({
+        //   url: 'http://152.136.185.210:8000/api/w6/home/data',
+        //   data:{
+        //       type:'sell',
+        //       page:1
+        //   },
+        //   success:function(res){
+        //       console.log(res)
+        //   }
+        // })
+        //2、发送携带参数的post请求
+        // wx.request({
+        //   url: 'http://httpbin.org/post',
+        //   method:"post",    //必写，否则默认get请求
+        //   data:{
+        //       name:"cyj",
+        //       age:18
+        //   },
+        //   success:function(res){
+        //       console.log(res)
+        //   },
+        //   fail:function(err){
+        //       console.log(err)
+        //   }
+        // })
+        //3、使用封装的request
+        request({
+            url:'http://152.136.185.210:8000/api/w6/recommend'
+        }).then(res=>{
+            console.log(res)
+        }).catch(err=>{
+            console.log(err)
+        })
     },
 
     /**
