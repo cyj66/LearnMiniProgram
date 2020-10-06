@@ -1,2 +1,20 @@
 <!--home/home.wxml-->
 <text>home/home.wxml</text>
+
+<!-- 1.navigator页面跳转 -->
+<navigator url='/pages/detail/detail'>跳到详情页</navigator>
+<navigator url='/pages/detail/detail' 
+           open-type="redirect">
+           跳到详情页redirect
+</navigator>
+<navigator url='/pages/about/about' 
+           open-type="switchTab">
+           跳到关于页switchTab
+</navigator>
+
+<!-- 2.跳转过程的数据传递 -->
+<navigator url="/pages/detail/detail?name=cyj&age=18">携带数据跳到详情页</navigator>
+<view>{{title}}</view>
+
+<!-- 3.通过代码进行页面跳转 -->
+<button bindtap="handlePushDetail">跳到详情页</button>
